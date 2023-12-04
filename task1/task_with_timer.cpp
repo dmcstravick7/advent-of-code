@@ -14,13 +14,13 @@ int main()
     std::ifstream inputFile("./input.txt");
 
     // Store each number from each line in vec
-    std::vector<int> rowNumbers;
+    std::vector<uint8_t> rowNumbers;
 
     // Process each line of file
     std::string line;
     while (std::getline(inputFile, line))
     {
-        unsigned int num = processLine(line);
+        uint8_t num = processLine(line);
         rowNumbers.push_back(num);
     }
     inputFile.close();

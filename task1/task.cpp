@@ -13,13 +13,13 @@ int main()
     std::ifstream inputFile("./input.txt");
 
     // Store each number from each line in vec
-    std::vector<int> lineSum;
+    std::vector<uint8_t> lineSum;
 
     // Process each line of file
     std::string line;
     while (std::getline(inputFile, line))
     {
-        unsigned int num = processLine(line);
+        uint8_t num = processLine(line);
         lineSum.push_back(num);
     }
     inputFile.close();
